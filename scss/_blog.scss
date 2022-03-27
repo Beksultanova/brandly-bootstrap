@@ -1,0 +1,56 @@
+@import "vars";
+.blog {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        &-title {
+            font-family: $secondary-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            text-transform: capitalize;
+            color: $accent;
+            margin: 20px 0;
+        }
+        &-details {
+            font-family: $secondary-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: $dark;
+        }
+        &-leed {
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: #9A9A9A;
+            width: 538px;
+        }
+        &-link {
+            font-family: $secondary-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: $dark;
+            padding: 4px 25px;
+            border: 1px solid $dark;
+            transition: all 0.3s;
+            &:hover {
+                background-color: $accent;
+                border-color: $accent;
+                color: $light;
+            }
+        }
+    }
+}
